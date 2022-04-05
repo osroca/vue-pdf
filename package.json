@@ -14,12 +14,14 @@
     "url": "https://github.com/FranckFreiburger/vue-pdf/issues"
   },
   "homepage": "https://github.com/FranckFreiburger/vue-pdf#readme",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "peerDependencies": {},
   "dependencies": {
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "loader-utils": "^1.4.0",
-    "pdfjs-dist": "^2.5.207 <2.8.0",
-    "raw-loader": "^4.0.1",
-    "vue-pdf": "^4.3.0",
+    "pdfjs-dist": "^2.6.347",
+    "raw-loader": "^4.0.2",
     "vue-resize-sensor": "^2.0.0",
     "worker-loader": "^2.0.0"
   }
