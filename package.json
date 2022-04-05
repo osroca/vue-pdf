@@ -1,11 +1,8 @@
 {
   "name": "vue-pdf",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "vue.js pdf viewer",
   "main": "src/vuePdfNoSss.vue",
-  "scripts": {
-    "prepare": "npm run build"
-  },
   "keywords": [
     "vue.js",
     "pdf",
