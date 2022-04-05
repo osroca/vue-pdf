@@ -23,6 +23,6 @@
     "pdfjs-dist": "^2.7.570",
     "raw-loader": "^4.0.2",
     "vue-resize-sensor": "^2.0.0",
-    "worker-loader": "^2.0.0"
+    "worker-loader": "^3.0.0"
   }
 }
