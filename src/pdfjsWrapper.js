@@ -188,7 +188,8 @@ export default function(PDFJS) {
 			if ( pdfPage === null )
 				return;
 
-			rotate = (pdfPage.rotate === undefined ? 0 : pdfPage.rotate) + (rotate === undefined ? 0 : rotate);
+				if ( rotate === undefined )
+				rotate = pdfPage.rotate;
 
 			var scale = canvasElt.offsetWidth / pdfPage.getViewport(1).width * (window.devicePixelRatio || 1);
 			var viewport = pdfPage.getViewport(scale, rotate);
@@ -234,6 +235,7 @@ export default function(PDFJS) {
 				annotationLayerElt.style.visibility = '';
 				canceling = false;
 				pdfRender = null;
+				emitEvent('page-rendered');
 			})
 			.catch(function(err) {
 

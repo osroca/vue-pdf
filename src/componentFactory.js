@@ -8,19 +8,19 @@ export default function(pdfjsWrapper) {
 	return {
 		createLoadingTask: createLoadingTask,
 		render: function(h) {
-			return h('span', {
+			return h('div', {
 				attrs: {
-					style: 'position: relative; display: inline-block'
+					style: 'position: relative'
 				}
 			}, [
 				h('canvas', {
-					attrs: {
-						style: 'display: inline-block; width: 100%; vertical-align: top',
+					style: {
+						display: 'block',
+						width: '100%',
 					},
 					ref:'canvas'
 				}),
-				h('span', {
-					style: 'display: inline-block; width: 100%',
+				h('div', {
 					class: 'annotationLayer',
 					ref:'annotationLayer'
 				}),
